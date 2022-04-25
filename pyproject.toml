@@ -2,7 +2,6 @@
 name = "python-template"
 version = "0.1.0"
 description = ""
-authors = ["Matt Andersen <mattandersen0@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
