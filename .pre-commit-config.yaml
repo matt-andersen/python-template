@@ -43,6 +43,12 @@ repos:
       - id: prettier
         name: "General: Prettier formatter"
 
+  - repo: "https://github.com/igorshubovych/markdownlint-cli"
+    rev: "v0.31.1"
+    hooks:
+      - id: markdownlint
+        name: "General: Markdown linter"
+
   # Security
   - repo: "https://github.com/Yelp/detect-secrets"
     rev: "v1.2.0"
