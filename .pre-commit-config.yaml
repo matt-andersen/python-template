@@ -52,7 +52,12 @@ repos:
     hooks:
       - id: prettier
         name: "General: Prettier formatter"
-        types_or: [html, css, scss, yaml, toml]
+
+  - repo: "https://github.com/codespell-project/codespell"
+    rev: "v2.1.0"
+    hooks:
+      - id: codespell
+        name: "General: Spell check"
 
   # --------------------------------------------------------------------------------------
   # Security
