@@ -23,6 +23,17 @@ force_grid_wrap = 0
 use_parentheses = true
 line_length = 90
 
+[tool.mypy]
+follow_imports = "silent"
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+disallow_any_generics = true
+check_untyped_defs = true
+no_implicit_reexport = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
 [tool.black]
 line-length = 90
 target-version = ['py38']
