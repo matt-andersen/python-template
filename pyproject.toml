@@ -2,6 +2,7 @@
 name = "python-template"
 version = "0.1.0"
 description = ""
+authors = ["Matt Andersen <mattandersen0@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -11,3 +12,36 @@ python = "^3.10"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 90
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 90
+
+[tool.black]
+line-length = 90
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
